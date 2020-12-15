@@ -1,0 +1,6 @@
+xcuserdata/
+Pods/
+.DS_Store
+Moya-Httpbin.app.dSYM.zip
+Moya-Httpbin.ipa
+Moya-Httpbin.xcodeproj/xcuserdata/
