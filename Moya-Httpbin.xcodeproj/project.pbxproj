@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,13 @@
 		823D1A7D25886E3800913378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D1A7C25886E3800913378 /* ViewController.swift */; };
 		823D1A8225886E3B00913378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823D1A8125886E3B00913378 /* Assets.xcassets */; };
 		823D1A8525886E3B00913378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823D1A8325886E3B00913378 /* LaunchScreen.storyboard */; };
+		823D1A96258873CE00913378 /* HttpbinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D1A95258873CE00913378 /* HttpbinService.swift */; };
+		8F7C04B7C133E3E4FF75123C /* Pods_Moya_Httpbin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CC692E11DD03DB44A2AFB2 /* Pods_Moya_Httpbin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58CC692E11DD03DB44A2AFB2 /* Pods_Moya_Httpbin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_Httpbin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A97FC07CE35CE69EACFD263 /* Pods-Moya-Httpbin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-Httpbin.release.xcconfig"; path = "Target Support Files/Pods-Moya-Httpbin/Pods-Moya-Httpbin.release.xcconfig"; sourceTree = "<group>"; };
 		823D1A7525886E3800913378 /* Moya-Httpbin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moya-Httpbin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		823D1A7825886E3800913378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		823D1A7A25886E3800913378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		823D1A8125886E3B00913378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		823D1A8425886E3B00913378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		823D1A8625886E3B00913378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823D1A942588700500913378 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		823D1A95258873CE00913378 /* HttpbinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpbinService.swift; sourceTree = "<group>"; };
+		A5EBFF32C681EE5B0BB8D04B /* Pods-Moya-Httpbin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-Httpbin.debug.xcconfig"; path = "Target Support Files/Pods-Moya-Httpbin/Pods-Moya-Httpbin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7C04B7C133E3E4FF75123C /* Pods_Moya_Httpbin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299C33FCECD6A7CAE220A1E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBFF32C681EE5B0BB8D04B /* Pods-Moya-Httpbin.debug.xcconfig */,
+				6A97FC07CE35CE69EACFD263 /* Pods-Moya-Httpbin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		823D1A6C25886E3800913378 = {
 			isa = PBXGroup;
 			children = (
+				823D1A942588700500913378 /* README.md */,
 				823D1A7725886E3800913378 /* Moya-Httpbin */,
 				823D1A7625886E3800913378 /* Products */,
+				299C33FCECD6A7CAE220A1E3 /* Pods */,
+				9F2F6CD7DD5834FC2BA257DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +77,20 @@
 				823D1A7825886E3800913378 /* AppDelegate.swift */,
 				823D1A7A25886E3800913378 /* SceneDelegate.swift */,
 				823D1A7C25886E3800913378 /* ViewController.swift */,
+				823D1A95258873CE00913378 /* HttpbinService.swift */,
 				823D1A8125886E3B00913378 /* Assets.xcassets */,
 				823D1A8325886E3B00913378 /* LaunchScreen.storyboard */,
 				823D1A8625886E3B00913378 /* Info.plist */,
 			);
 			path = "Moya-Httpbin";
+			sourceTree = "<group>";
+		};
+		9F2F6CD7DD5834FC2BA257DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58CC692E11DD03DB44A2AFB2 /* Pods_Moya_Httpbin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 823D1A8925886E3B00913378 /* Build configuration list for PBXNativeTarget "Moya-Httpbin" */;
 			buildPhases = (
+				E613949C66BFC67C65C81368 /* [CP] Check Pods Manifest.lock */,
 				823D1A7125886E3800913378 /* Sources */,
 				823D1A7225886E3800913378 /* Frameworks */,
 				823D1A7325886E3800913378 /* Resources */,
+				4F276650F6537177042F4953 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,12 +159,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F276650F6537177042F4953 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya-Httpbin/Pods-Moya-Httpbin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya-Httpbin/Pods-Moya-Httpbin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya-Httpbin/Pods-Moya-Httpbin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E613949C66BFC67C65C81368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moya-Httpbin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		823D1A7125886E3800913378 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				823D1A7D25886E3800913378 /* ViewController.swift in Sources */,
+				823D1A96258873CE00913378 /* HttpbinService.swift in Sources */,
 				823D1A7925886E3800913378 /* AppDelegate.swift in Sources */,
 				823D1A7B25886E3800913378 /* SceneDelegate.swift in Sources */,
 			);
@@ -271,6 +345,7 @@
 		};
 		823D1A8A25886E3B00913378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5EBFF32C681EE5B0BB8D04B /* Pods-Moya-Httpbin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +366,7 @@
 		};
 		823D1A8B25886E3B00913378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A97FC07CE35CE69EACFD263 /* Pods-Moya-Httpbin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
